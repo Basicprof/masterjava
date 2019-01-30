@@ -16,8 +16,8 @@ public class ThymeleafUtil {
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setPrefix("/WEB-INF/templates/");
         templateResolver.setSuffix(".html");
-        templateResolver.setCacheTTLMs(1000L);
-        final TemplateEngine engine = new TemplateEngine();
+        templateResolver.setCacheTTLMs(1000L);// Через какое время обновлять кеш
+        final TemplateEngine engine = new TemplateEngine();// Движок который обрабатывает наши теймлейты
         engine.setTemplateResolver(templateResolver);
         return engine;
     }
