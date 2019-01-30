@@ -2,7 +2,6 @@ package ru.javaops.masterjava.upload;
 
 import org.thymeleaf.context.WebContext;
 import ru.javaops.masterjava.model.User;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +12,6 @@ import javax.servlet.http.Part;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
-
 import static ru.javaops.masterjava.common.web.ThymeleafListener.engine;
 
 @WebServlet(urlPatterns = "/", loadOnStartup = 1)
